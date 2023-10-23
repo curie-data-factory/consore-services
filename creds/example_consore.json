@@ -1,0 +1,7 @@
+{
+  "description": "utilisateur du reverse proxy donnant accès aux index elasticsearch de production (current) et de recette (next) de la plateforme consore",
+  "host": "xxx.xxx.xxx",
+  "password": "*********",
+  "port": "9201",
+  "user": "xxx"
+}
