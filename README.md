@@ -19,8 +19,9 @@ poetry install --no root
 Le projet se compose de services et d'une toolbox d'interactions avec les indexes Consore. 
 
 # Services disponibles
+### 1.[Controle codage PMSI README](consore_services%2Fcontrole_codage_pmsi%2FREADME.md)
+
 Le service propose de compléter le codage PMSI avec des recherches de mots clefs dans Consore afin d'identifier des codes diagnostiques manquant du codage PMSI.
-### [Controle codage PMSI README](consore_services%2Fcontrole_codage_pmsi%2FREADME.md)
 
 # Toolbox
 Cette toolbox est un ensemble de méthodes de requettage et d'extraction des données des indexes Consore.  
