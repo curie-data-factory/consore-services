@@ -4,10 +4,13 @@ Created on march 23 2023
 @author: tbalezea
 """
 
-
+import os
 import sys
-import time
-from datetime import datetime
+
+PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+sys.path.append(PROJECT_ROOT)
+
+from datetime import datetime, timedelta
 from typing import Dict, List
 
 import pandas as pd
@@ -199,7 +202,7 @@ def process_main():
         | (
             (mergedf["type"] == "CR d'anesthésie")
             & (mergedf["dateDebut"] <= mergedf["sortie"])
-            & (mergedf["dateDebut"] >= (mergedf["entreele"] + pd.DateOffset(days=-90)))
+            & (mergedf["dateDebut"] >= (mergedf["entreele"] + timedelta(days=-90)))
         )
     ]
 
@@ -269,4 +272,5 @@ if __name__ == "__main__":
     # --SANS_ATCD true --SANS_NEGATION true --SANS_HYPOTHESE false
     # --plugin_db plugindb.json
     # *****************************
+
     process_main()
