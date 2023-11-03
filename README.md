@@ -11,7 +11,7 @@ pip install pre-commit
 ```
 cd PROJECTLOCATION
 pre-commit install
-poetry install --no root
+poetry install --no-root
 ```
 
 # Documentation
